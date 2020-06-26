@@ -16,7 +16,7 @@ namespace LocadoraAPI
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/{controller}/{metodo}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
             // Utilizar JSON

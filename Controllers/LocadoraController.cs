@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LocadoraAPI.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,10 +10,15 @@ namespace LocadoraAPI.Controllers
 {
     public class LocadoraController : ApiController
     {
+
         // GET: api/Locadora
-        public IEnumerable<string> Get()
+        [HttpGet]
+        public List<Filme> ListarFilmes()
         {
-            return new string[] { "value1", "value2" };
+            Filme filme = new Filme();
+
+            return filme.retornarFilmes();
+
         }
 
         // GET: api/Locadora/5
