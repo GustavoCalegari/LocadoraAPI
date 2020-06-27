@@ -7,7 +7,6 @@ namespace LocadoraAPI.Models
 {
     public class Cliente
     {
-        public int idCliente { get; set; }
         public string nome { get; set; }
         public string email { get; set; }
         public string telefone { get; set; }
@@ -15,19 +14,6 @@ namespace LocadoraAPI.Models
         public string logradouro { get; set; }
         public int numeroResidencia { get; set; }
         public string cpf { get; set; }
-        public bool habilitado { get; set; }
 
-        public Cliente(int idCliente, string nome, string email, string telefone, string sexo, string logradouro, int numeroResidencia, string cpf, bool habilitado)
-        {
-            this.idCliente = idCliente;
-            this.nome = nome;
-            this.email = email;
-            this.telefone = telefone;
-            this.sexo = sexo;
-            this.logradouro = logradouro;
-            this.numeroResidencia = numeroResidencia;
-            this.cpf = cpf;
-            this.habilitado = habilitado;
-        }
     }
 }
