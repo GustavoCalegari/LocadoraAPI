@@ -106,6 +106,7 @@ namespace LocadoraAPI.Models
                 {
                     while (dr.Read())
                     {
+                        filme.idFilme = Convert.ToInt32(dr["idFilme"]);
                         filme.nome = dr["nome"].ToString();
                         filme.genero = dr["genero"].ToString();
                         filme.disponivel = Convert.ToBoolean(dr["disponivel"]);

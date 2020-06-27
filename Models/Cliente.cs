@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
+﻿
 namespace LocadoraAPI.Models
 {
     public class Cliente
@@ -15,5 +11,6 @@ namespace LocadoraAPI.Models
         public int numeroResidencia { get; set; }
         public string cpf { get; set; }
 
+        public Cliente() { }
     }
 }
