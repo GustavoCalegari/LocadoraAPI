@@ -12,7 +12,7 @@ namespace FilmeAPI.Controllers
     public class FilmeController : ApiController
     {
 
-        // GET: filmes/Filme/ListarFilmes
+        // GET: api/Filme
         [HttpGet]
         public List<Filme> ListarFilmes()
         {
@@ -22,7 +22,7 @@ namespace FilmeAPI.Controllers
 
         }
 
-        // GET: filmes/Filme/5
+        // GET: api/Filme/5
         public List<Filme> ListarFilme(int id)
         {
             Filme filme = new Filme();
@@ -38,7 +38,7 @@ namespace FilmeAPI.Controllers
             return filme.cadastrarFilme(novoFilme.nome, novoFilme.genero, novoFilme.disponivel);
         }
 
-        // PUT: api/Filme/5
+        // PUT: api/Filme/
         public string Put([FromBody] Filme editar)
         {
             Filme filme = new Filme();
